@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(31,45,60);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.toggle-button{
+    position: absolute;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 41px;
+  }
+  
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: grey;
+    transition: all 0.5s;
+}
+  
+  
+/* .change .top-bar{
+    transform: rotateZ(-405deg) translate(-8px, 11px);
+}
+  
+.change .middle-bar{
+    opacity: 0;
+}
+  
+.change .bottom-bar{
+    transform: rotateZ(405deg) translate(-8px, -11px);;
+} */
+nav .navbar-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .navbar-links span{
+    display: inline;
+}
+nav .navbar-links button{
+    position: relative;
+}
+/* head section start */
+.head{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 150px;
+}
+.head img{
+    width: 100%;
+}
+.head h6{
+    font-weight: bold;
+    font-size: 20px;
+}
+.head ul{
+    list-style: none;
+}
+.head ul li{
+    font-size: 15px;
+}
+.head ul li:nth-child(2){
+    padding-top: 20px;
+}
+.head ul li:nth-child(3){
+    padding-top: 20px;
+}
+/* head section end */
+
+/* belowHead section start */
+
+.belowHead{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 50px;
+}
+.belowHead h6{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.belowHead p{
+    margin-bottom: 0;
+}
+.belowHead ol{
+    margin-left: 20px;
+}
+.belowHead ol li{
+    font-size: 15px;
+    padding-top: 20px
+}
+.belowHead img{
+    width: 100%;
+}
+/* belowHead section end */
+
+
+
+/* vacancies section start */
+.vacancies{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 100px;
+}
+.vacancies h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.vacancies .sections{
+    display: flex;
+    cursor: pointer;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.vacancies .sections p{
+    color: rgb(81, 47, 182);
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 500;   
+}
+.vacancies .sections p:hover{
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+
+}
+.vacancies .sections p:nth-child(2){
+    margin-left: 20px;
+}
+.vacancies .sections p:nth-child(3){
+    margin-left: 20px;
+    
+}
+.active{
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 5px;
+}
+.vacancies .cards .card .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vacancies .cards span{
+    font-weight: bold;
+}
+.vacancies .cards a{
+    text-decoration: none;
+    color: rgb(5, 5, 206);
+    font-weight: bold;
+}
+.vacancies .cards a:hover{
+    color: rgb(1, 1, 117);
+}
+.vacancies .cards .card{
+    background-color: rgb(249,250,252);
+    padding: 40px 20px;
+    margin-bottom: 10px;
+}
+.businessO{
+    display: none;
+    flex-direction: column;
+}
+.businessD{
+    display: none;
+    flex-direction: column;
+}
+.tech{
+    display: none;
+    flex-direction: column;
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+/* vacancies section end */
+.dynamic{
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.dynamic h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.dynamic h5{
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.dynamic ol{
+    padding-left: 60px;
+}
+.dynamic ol li{
+    font-size: 15px;
+}
+.dynamic button{
+    margin-top: 30px;
+}
+
+
+footer .foot{
+    background-color: rgb(60,72,88);
+}
+footer .foot p{
+    font-family: 'Archivo', sans-serif;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 13px 0;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:990px){
+    .belowHead h6{
+        padding-top: 50px;
+    }
+    .vacancies{
+        width: 100%;
+    }
+}
+@media screen and (max-width:866px){
+
+    .navbar{
+        width: 90%;
+    }
+    nav .navbar-links span{
+        display: none;
+    }
+    nav .navbar-links button{
+        position: absolute;
+        right: 0;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .navbar{
+        width: 100%;
+    }
+}
+
